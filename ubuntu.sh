@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-
+cd ~
 clear
 printf "This Project is distributed under the Lisence GPLv3 by MFDGaming\n"
 
