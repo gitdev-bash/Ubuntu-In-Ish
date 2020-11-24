@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 clear
-printf "This Project is distributed under the Lisence GPLv3 by MFDGaming\n"
+printf "This Project is distributed under the License GPLv3 by MFDGaming\n"
 
 UBUNTU_VERSION=18.04.5
 DIR=ubuntu-fs
@@ -23,7 +23,7 @@ exit
 fi
 elif [ -z "$(command -v wget)" ];then
 printf "Please install wget.\n"
-exit
+exit 1
 fi
 if [ "$FIRST" != 1 ];then
 INSTP2
@@ -35,8 +35,7 @@ rm -rf ubuntu.tar.gz
 fi
 if [ ! -f "ubuntu.tar.gz" ];then
 printf "Downloading the ubuntu rootfs, please wait...\n"
-wget http://cdimage.ubuntu.com/ubuntu-base/releases/${UBUNTU_VERSION}/release/ubuntu-base-${UBUNTU_VERSION}-base-${ARCHITECTURE}.tar.gz -q -O ubuntu.tar.gz
-printf "Download complete!\n"
+wget http://cdimage.ubuntu.com/ubuntu-base/releases/${UBUNTU_VERSION}/release/ubuntu-base-${UBUNTU_VERSION}-base-${ARCHITECTURE}.tar.gz -q -O ubuntu.tar.gz && printf "Download complete!\n"
 fi
 cur=`pwd`
 mkdir -p $DIR
