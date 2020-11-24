@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 clear
-printf "This Project is distributed under the Lisence GPLv3 by MFDGaming\n"
+printf "This Project is distributed under the License GPLv3 by MFDGaming\n"
 
 UBUNTU_VERSION=18.04.5
 DIR=ubuntu-fs
