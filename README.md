@@ -2,8 +2,8 @@
 
 #STEPS (Fast)
 
-Just run `mkdir ~/ubuntu-in-ish && cd ~/ubuntu-in-ish && wget -O - https://github.com/MFDGaming/Ubuntu-In-Ish/raw/master/ubuntu.sh | sh && chmod +x * && ./ubuntu.sh -y && ./startubuntu.sh`
-
+Just run `mkdir ~/ubuntu-in-ish && cd ~/ubuntu-in-ish && wget -O - https://github.com/MFDGaming/Ubuntu-In-Ish/raw/master/ubuntu.sh | sh && chmod +x * && ./ubuntu.sh -y`
+And when you want to start Ubuntu run `~/startubuntu.sh`
 #STEPS (Manual)
 
 1. Go to the home folder: `cd ~`
